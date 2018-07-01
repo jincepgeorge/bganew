@@ -14,6 +14,7 @@ import { MainComponent } from './components/main/main.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { MinistriesComponent } from './components/ministries/ministries.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SidebarContentComponent } from './components/sidebar-content/sidebar-content.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MainComponent,
     GalleryComponent,
     MinistriesComponent,
-    ContactComponent
+    ContactComponent,
+    SidebarContentComponent
   ],
   imports: [
     BrowserModule,

@@ -9,13 +9,13 @@
         <div class="main-navigation">
 <button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 <ul class="menu" #menu>
-<li class="menu-item current-menu-item"><a routerLink="/dashboard">Home <small>Home Page</small></a></li>
-<li class="menu-item"><a routerLink="/dashboard/founders">Founders <small>Founders</small></a></li>
-              <li class="menu-item"><a routerLink="/dashboard/board">Board <small>Board</small></a></li>
-<li class="menu-item"><a routerLink="/dashboard/ministries">Ministries <small>Ministries</small></a></li>
-<li class="menu-item"><a routerLink="/dashboard/news">Events <small>Events</small></a></li>
-<li class="menu-item"><a routerLink="/dashboard/gallery">Gallery <small>Gallery</small></a></li>
-<li class="menu-item"><a routerLink="/dashboard/contact">Contact <small>Contact Us</small></a></li>
+<li class="menu-item " [ngClass]="{'current-menu-item': selectedItem == 'home'}" (click)="listClick($event, 'home')"><a routerLink="/dashboard">Home </a></li>
+<li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'founders'}" (click)="listClick($event, 'founders')"><a routerLink="/dashboard/founders">Founders </a></li>
+              <li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'board'}" (click)="listClick($event, 'board')"><a routerLink="/dashboard/board">Board </a></li>
+<li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'ministries'}" (click)="listClick($event, 'ministries')"><a routerLink="/dashboard/ministries">Ministries</a></li>
+<li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'news'}" (click)="listClick($event, 'news')"><a routerLink="/dashboard/news">Events </a></li>
+<li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'gallery'}" (click)="listClick($event, 'gallery')"><a routerLink="/dashboard/gallery">Gallery </a></li>
+<li class="menu-item" [ngClass]="{'current-menu-item': selectedItem == 'contact'}" (click)="listClick($event, 'contact')"><a routerLink="/dashboard/contact">Contact </a></li>
 </ul>
 </div></div>
   </div>

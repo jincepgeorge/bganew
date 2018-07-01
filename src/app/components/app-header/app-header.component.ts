@@ -6,7 +6,7 @@ import * as $ from 'jquery';
   styleUrls: ['./app-header.component.css']
 })
 export class AppHeaderComponent implements OnInit {
-
+  selectedItem:any;
   constructor() { }
 
   ngOnInit() {
@@ -23,5 +23,10 @@ export class AppHeaderComponent implements OnInit {
     
     });
   }
+  listClick(event, newValue) {
+    console.log(newValue);
+    this.selectedItem = newValue;  // don't forget to update the model here
+    // ... do other stuff here ...
+}
 
 }
